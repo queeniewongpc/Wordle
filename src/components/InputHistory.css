@@ -1,0 +1,375 @@
+.input-history {
+  position: absolute;
+  width: 450px;
+  height: 500px;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: transparent;
+  border: none;
+}
+.diffIndicator {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input-outer-container {
+  background-color: white;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border: #ffffff solid 10px;
+  top: 65px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.input-field {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transform: translate(-50%, -50%);
+}
+
+.submit-button {
+  background-color: #000000;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 9px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.submit-button:hover {
+  border: #000000 3px solid;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+input {
+  border: #000000 solid 2px;
+  border-radius: 2px;
+}
+
+.word-list {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+.restart-button {
+  display: flex;
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  left: 50%;
+  bottom: 5%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.restart-button:hover {
+  border: #000000 5px solid;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) and (min-width: 1024px) {
+  .input-history {
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+  }
+  .input-outer-container {
+
+    width: 60vw;
+    height: 55vh;
+    border: #ffffff solid 10px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .diffIndicator {
+    position: absolute;
+    width: 40vw;
+    height: 10vh;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+
+  input {
+    position: relative;
+    left: 2vw;
+    margin-right: 0px;
+    border: #000000 solid 2px;
+    border-radius: 2px;
+  }
+
+  .input-field {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-50%, -50%);
+  }
+
+  .word-list {
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    top: 69%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+  }
+
+  .restart-button {
+    position: absolute;
+    left: 50%;
+    bottom: -2%;
+    width: 120px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 800px) {
+  .input-history {
+    position: absolute;
+    width: 60vw;
+    height: 40vh;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: rgb(255, 255, 255) solid 1px;
+  }
+  .input-outer-container {
+    width: 60vw;
+    height: 55vh;
+    border: #ffffff solid 10px;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .diffIndicator {
+    position: absolute;
+    width: 40vw;
+    height: 10vh;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+
+  input {
+    position: relative;
+    left: 2vw;
+    margin-right: 0px;
+    border: #ffffff solid 2px;
+    border-radius: 2px;
+  }
+
+  .input-field {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-50%, -50%);
+  }
+
+  .submit-button {
+    font-size: 20px;
+  }
+
+  .word-list {
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    top: 68%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+  }
+
+  .restart-button {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 200px;
+    height: 37px;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 541px) {
+  .input-history {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 540px) and (min-width: 300px) {
+  .input-history {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    border: none;
+  }
+  .input-outer-container {
+    position: absolute;
+    width: 70vw;
+    height: 350px;
+    border: #ffffff solid 10px;
+    top: 93px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .diffIndicator {
+    position: absolute;
+    width: 60vw;
+    height: 20vh;
+    top: 70px;
+    left: 52%;
+    transform: translate(-50%, 0);
+    font-size: 17px;
+  }
+
+  .word-list {
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    top: 50px;
+    left: 70%;
+    transform: translate(-50%, 0);
+  }
+
+  .restart-button {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    width: 120px;
+    height: 30px;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .input-history {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    border: none;
+  }
+
+  .input-outer-container {
+    position: absolute;
+    width: 80vw;
+    height: 50vh;
+    border: #000000 solid 10px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .diffIndicator {
+    position: absolute;
+    width: 80vw;
+    height: 5vh;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 15px;
+  }
+
+  .input-field {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+  }
+
+  input {
+    width: 30vw;
+    height: 8vw;
+    position: relative;
+    left: 2vw;
+    margin-right: 0px;
+  }
+
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 10vw;
+    position: relative;
+    left: 2%;
+    font-size: 16px;
+  }
+
+  .word-list {
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    top: 72%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+  }
+
+  .restart-button {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    width: 120px;
+    height: 30px;
+  }
+}

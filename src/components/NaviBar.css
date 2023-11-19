@@ -1,0 +1,108 @@
+.navi-bar {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 110px;
+}
+
+.wordle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+.home-button {
+  position: absolute;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 25px;
+  top: 70px;
+  left: 5%;
+  padding: 0px;
+  width: 12vw;
+}
+
+.rule-button {
+  position: absolute;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 25px;
+  top: 70px;
+  left: 20%;
+  padding: 0px;
+  width: 12vw;
+}
+
+.home-button:hover {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border: black solid 2px;
+  cursor: pointer;
+}
+
+.rule-button:hover {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border: black solid 2px;
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) and (min-width: 301px) {
+  .navi-bar {
+    height: 130px;
+  }
+
+  .wordle {
+    font-size: 45px;
+  }
+
+  .rule-button, .home-button {
+    font-size: 20px;
+    width: 20vw;
+  }
+
+  .home-button {
+    top: 75%;
+    left: 3%;
+  }
+
+  .rule-button {
+    top: 75%;
+    left: 28%;
+  }
+}
+
+@media (max-width: 300px) {
+  .navi-bar {
+    height: 110px;
+  }
+
+  .wordle {
+    font-size: 30px;
+    top: 45%;
+  }
+
+  .rule-button, .home-button {
+    font-size: 15px;
+    transform: translate(-50%, 0);
+    width: 20vw;
+  }
+
+  .home-button {
+    top: 75%;
+    left: 30%;
+  }
+
+  .rule-button {
+    top: 75%;
+    left: 70%;
+  }
+}

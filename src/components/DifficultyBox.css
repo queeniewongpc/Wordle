@@ -1,0 +1,73 @@
+.diff-box-outer-container {
+  background: linear-gradient(to right, #ffffff, #000000);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-level-box {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 250px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.game-level-box:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .diff-box-outer-container {
+    width: 80vw;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .game-level-box {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 1024px) {
+  .diff-box-outer-container {
+    width: 65vw;
+    height: 300px;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 1280px) {
+  .diff-box-outer-container {
+    width: 55vw;
+    height: 300px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
