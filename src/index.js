@@ -13,7 +13,6 @@ import App from "./pages/App";
 import Rule from "./pages/Rule";
 import Game from "./pages/Game";
 import NaviBar from "./components/NaviBar";
-import DifficultyBox from "./components/DifficultyBox";
 import combineReducers from "./reducers/wordleReducers";
 
 const saveState = (state) => {

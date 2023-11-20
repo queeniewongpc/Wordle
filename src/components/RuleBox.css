@@ -72,7 +72,7 @@ span {
     top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .rule-title {
@@ -97,7 +97,7 @@ span {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .rule-title {
@@ -128,7 +128,7 @@ span {
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
   }
   .rule-title {
     font-size: 18px;
