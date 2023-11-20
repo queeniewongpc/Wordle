@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import {
-  Router,
   BrowserRouter,
   Route,
   Routes,
