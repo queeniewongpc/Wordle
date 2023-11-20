@@ -75,7 +75,7 @@ input {
   width: 400px;
   height: 100px;
   top: 30%;
-  left: 85%;
+  left: 69%;
   transform: translate(-50%, -50%);
 }
 
@@ -85,7 +85,7 @@ input {
   width: 120px;
   height: 40px;
   left: 50%;
-  bottom: 5%;
+  bottom: 35%;
   border-radius: 10px;
   transform: translate(-50%, -50%);
   background-color: #000000;
@@ -154,7 +154,7 @@ input {
 
   .word-list {
     position: absolute;
-    width: 50vw;
+    width: 55vw;
     height: 60vh;
     top: 69%;
     left: 82%;
@@ -224,10 +224,10 @@ input {
 
   .word-list {
     position: absolute;
-    width: 50vw;
+    width: 55vw;
     height: 60vh;
-    top: 68%;
-    left: 79%;
+    top: 69%;
+    left: 80%;
     transform: translate(-50%, -50%);
   }
 
@@ -282,7 +282,7 @@ input {
 
   .word-list {
     position: absolute;
-    width: 50vw;
+    width: 55vw;
     height: 60vh;
     top: 50px;
     left: 70%;
@@ -358,9 +358,9 @@ input {
 
   .word-list {
     position: absolute;
-    width: 50vw;
+    width: 55vw;
     height: 60vh;
-    top: 72%;
+    top: 70%;
     left: 54%;
     transform: translate(-50%, -50%);
   }

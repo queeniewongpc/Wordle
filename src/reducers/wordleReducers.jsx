@@ -1,21 +1,8 @@
-import { act } from "react-dom/test-utils";
 import { combineReducers } from "redux";
 import {
   normalWords,
   hardWords,
 } from "../files/wordsCollection";
-
-///Following is the initial state of Redux Store
-// const initState = {
-//   message: "",
-//   historyInput: [],
-//   usedWords: new Set(),
-//   numAttempts: 0,
-//   isGameOn: false,
-//   gameDifficulty: null,
-//   answer: null,
-// };
-///
 
 function messageReducer(state = "", action) {
   if (action.type === "CHANGE_MESSAGE") {

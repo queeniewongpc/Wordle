@@ -22,7 +22,7 @@
   color: white;
   font-size: 25px;
   top: 70px;
-  left: 5%;
+  left: 20%;
   padding: 0px;
   width: 12vw;
 }
@@ -34,7 +34,7 @@
   color: white;
   font-size: 25px;
   top: 70px;
-  left: 20%;
+  left: 65%;
   padding: 0px;
   width: 12vw;
 }
@@ -71,12 +71,12 @@
 
   .home-button {
     top: 75%;
-    left: 3%;
+    left: 5%;
   }
 
   .rule-button {
     top: 75%;
-    left: 28%;
+    left: 70%;
   }
 }
 

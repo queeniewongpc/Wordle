@@ -18,10 +18,8 @@ import combineReducers from "./reducers/wordleReducers";
 
 const saveState = (state) => {
   try {
-    // Convert the state to a JSON string
     const serialisedState = JSON.stringify(state);
 
-    // Save the serialised state to localStorage against the key 'app_state'
     window.localStorage.setItem("wordle_game_state", serialisedState);
   } catch (err) {
     console.log("error saving the state to local store:");
@@ -31,14 +29,11 @@ const saveState = (state) => {
 
 const loadState = () => {
   try {
-    // Load the data saved in localStorage, against the key 'app_state';
+
     const serialisedState = window.localStorage.getItem("wordle_game_state");
 
-    // Passing undefined to createStore will result in our app getting the default state
-    // If no data is saved, return undefined
     if (!serialisedState) return undefined;
 
-    // De-serialise the saved state, and return it.
     return JSON.parse(serialisedState);
   } catch (err) {
     console.log("error loading state from local store:");
@@ -47,9 +42,7 @@ const loadState = () => {
   }
 };
 
-/**
- * This is where you create the app store
- */
+
 const oldState = loadState();
 
 const store = createStore(combineReducers, oldState);

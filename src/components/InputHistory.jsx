@@ -75,9 +75,7 @@ export default function InputHistory(props) {
 
   function isInputValidWord(input) {
     input = input.toLowerCase();
-    if (props.difficulty === "easy" && allWordsNormalSet.has(input)) {
-      return true;
-    } else if (props.difficulty === "normal" && allWordsNormalSet.has(input)) {
+    if (props.difficulty === "normal" && allWordsNormalSet.has(input)) {
       return true;
     } else if (props.difficulty === "hard" && allWordsHardSet.has(input)) {
       return true;
@@ -104,11 +102,10 @@ export default function InputHistory(props) {
   function wordCheckFirst(target, input, re, map) {
     for (let i = 0; i < target.length; i++) {
       if (target[i] === input[i]) {
-        re.push([input[i], "green"]); //letter matched, then set it to green directly
+        re.push([input[i], "green"]);
         map.set(target[i], map.get(target[i]) - 1);
       } else if (!map.get(input[i])) {
-        // letter does not exist in target, set it to grey directly
-        re.push([input[i], "gray"]);
+        re.push([input[i], "grey"]);
       } else {
         re.push([input[i], ""]);
       }
@@ -141,7 +138,7 @@ export default function InputHistory(props) {
       dispatch({ type: "SET_GAME_OVER" });
       dispatch({
         type: "CHANGE_MESSAGE",
-        value: `Sorry, you lose. The answer is '${target}'`,
+        value: `Game over. The answer is '${target}'`,
       });
     } else {
       const map = createTargetCounter(target);

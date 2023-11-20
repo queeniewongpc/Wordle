@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, shallowEqual } from "react-redux";
 import "./RuleBox.css";
-import WordElement from "./WordElement";
 
 export default function RuleBox() {
   const gameAttribute = useSelector(
