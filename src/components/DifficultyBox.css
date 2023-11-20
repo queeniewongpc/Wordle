@@ -1,6 +1,5 @@
 .diff-box-outer-container {
-  background: linear-gradient(to right, #ffffff, #000000);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
   border-radius: 25px;
   position: absolute;
   width: 600px;
